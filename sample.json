@@ -1,7 +1,7 @@
 {
     "user": [
         {
-            "username": "사워멜로우",
+            "username": "유저닉네임",
             "priority": true,
             "webhook": "https://discord.com/api/webhooks/a/b"
         }
