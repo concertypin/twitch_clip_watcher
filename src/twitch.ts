@@ -40,7 +40,7 @@ export class Twitch {
             connection.on("message", function (msg) {
                 if (msg.type !== 'utf8')
                     return
-
+                console.log(msg.utf8Data)
                 if (msg.utf8Data.includes("PRIVMSG")) {
                     const sender = msg.utf8Data.split("!")[0].replace(":", "")
                     const channel = msg.utf8Data.split("#")[1].split(":")[0].trim()
